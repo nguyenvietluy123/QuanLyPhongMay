@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Regular.ttf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookingVC">
+            <connections>
+                <outlet property="lbDate" destination="F9p-lA-4Ft" id="ZIk-av-voP"/>
+                <outlet property="navi" destination="YwS-Zi-bPS" id="tun-Wh-69h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-Zi-bPS" customClass="NavigationView" customModule="DoAn_CNPM" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.2156862745" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="bvY-mF-CGP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Booking"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-09-SZy">
+                    <rect key="frame" x="-131.5" y="156" width="375.5" height="375"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZL8-bC-1SX" customClass="KHView" customModule="DoAn_CNPM" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="326" width="375" height="35"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zr9-hS-eG6" customClass="KHView" customModule="DoAn_CNPM" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vse-qh-NYU" customClass="KHView" customModule="DoAn_CNPM" customModuleProvider="target">
+                                    <rect key="frame" x="31.5" y="0.0" width="312.5" height="35"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="- dd/mm/yyyy -" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9p-lA-4Ft" customClass="KHTextField" customModule="DoAn_CNPM" customModuleProvider="target">
+                                            <rect key="frame" x="12" y="8" width="269.5" height="19"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="Qvd-1b-cAo" customClass="KHImageView" customModule="DoAn_CNPM" customModuleProvider="target">
+                                            <rect key="frame" x="281.5" y="8" width="19" height="19"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="19" id="8PY-bN-zwZ"/>
+                                                <constraint firstAttribute="width" secondItem="Qvd-1b-cAo" secondAttribute="height" multiplier="1:1" id="WLz-E8-kvV"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkt-Sf-Do3" customClass="KHButton" customModule="DoAn_CNPM" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="303" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="btnShowPicker:" destination="-1" eventType="touchUpInside" id="GRS-ae-i7n"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Qvd-1b-cAo" firstAttribute="leading" secondItem="F9p-lA-4Ft" secondAttribute="trailing" id="7tZ-mp-jfS"/>
+                                        <constraint firstItem="F9p-lA-4Ft" firstAttribute="centerY" secondItem="vse-qh-NYU" secondAttribute="centerY" id="8dy-fs-PMb"/>
+                                        <constraint firstItem="Qvd-1b-cAo" firstAttribute="centerY" secondItem="vse-qh-NYU" secondAttribute="centerY" id="qoy-yW-Ouf"/>
+                                        <constraint firstItem="F9p-lA-4Ft" firstAttribute="leading" secondItem="vse-qh-NYU" secondAttribute="leading" constant="12" id="uOh-oH-a8o"/>
+                                        <constraint firstAttribute="trailing" secondItem="Qvd-1b-cAo" secondAttribute="trailing" constant="12" id="xcn-V9-ESL"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="vse-qh-NYU" firstAttribute="centerX" secondItem="Zr9-hS-eG6" secondAttribute="centerX" id="McN-Bf-aPl"/>
+                                <constraint firstItem="vse-qh-NYU" firstAttribute="width" secondItem="Zr9-hS-eG6" secondAttribute="width" multiplier="1:1.2" id="Q51-1a-Lb6"/>
+                                <constraint firstItem="vse-qh-NYU" firstAttribute="top" secondItem="Zr9-hS-eG6" secondAttribute="top" id="S8O-vN-pyT"/>
+                                <constraint firstAttribute="bottom" secondItem="vse-qh-NYU" secondAttribute="bottom" id="mBF-Cu-aHQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Zr9-hS-eG6" firstAttribute="top" secondItem="Y3w-se-bTt" secondAttribute="top" id="11i-qW-cBq"/>
+                        <constraint firstAttribute="height" constant="35" id="8nA-0U-82y"/>
+                        <constraint firstItem="Y3w-se-bTt" firstAttribute="trailing" secondItem="Zr9-hS-eG6" secondAttribute="trailing" id="DpH-5b-oTQ"/>
+                        <constraint firstItem="Y3w-se-bTt" firstAttribute="bottom" secondItem="Zr9-hS-eG6" secondAttribute="bottom" id="E1Q-ke-fyZ"/>
+                        <constraint firstItem="Zr9-hS-eG6" firstAttribute="leading" secondItem="Y3w-se-bTt" secondAttribute="leading" id="Hxw-PB-c5n"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Y3w-se-bTt"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNR-bN-ohL" customClass="KHButton" customModule="DoAn_CNPM" customModuleProvider="target">
+                    <rect key="frame" x="137.5" y="373" width="100" height="33"/>
+                    <color key="backgroundColor" red="0.094117647060000004" green="0.2156862745" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Yeh-Va-vuk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="17"/>
+                    <state key="normal" title="Đồng ý">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionAgree:" destination="-1" eventType="touchUpInside" id="12w-fc-qTc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày đăng ký" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL9-GJ-G9z" customClass="KHLabel" customModule="DoAn_CNPM" customModuleProvider="target">
+                    <rect key="frame" x="31.5" y="288" width="117.5" height="26"/>
+                    <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="21"/>
+                    <color key="textColor" red="0.094117647060000004" green="0.2156862745" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Bt-09-SZy" firstAttribute="width" secondItem="8Bt-09-SZy" secondAttribute="height" multiplier="1:1" id="0sC-2W-WwC"/>
+                <constraint firstItem="ZL8-bC-1SX" firstAttribute="top" secondItem="dL9-GJ-G9z" secondAttribute="bottom" constant="12" id="6yS-xc-NmT"/>
+                <constraint firstItem="YwS-Zi-bPS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CFG-IK-cmF"/>
+                <constraint firstItem="dL9-GJ-G9z" firstAttribute="leading" secondItem="vse-qh-NYU" secondAttribute="leading" id="DgH-b4-WzM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YwS-Zi-bPS" secondAttribute="trailing" id="GXr-Qj-Bq2"/>
+                <constraint firstItem="8Bt-09-SZy" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Q2s-OF-4WO"/>
+                <constraint firstItem="nNR-bN-ohL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="T80-oc-pmh"/>
+                <constraint firstItem="8Bt-09-SZy" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Y47-Wp-EMd"/>
+                <constraint firstItem="ZL8-bC-1SX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="bET-7g-bRn"/>
+                <constraint firstItem="YwS-Zi-bPS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bnX-Mm-9Ed"/>
+                <constraint firstItem="nNR-bN-ohL" firstAttribute="top" secondItem="ZL8-bC-1SX" secondAttribute="bottom" constant="12" id="iDc-du-ufd"/>
+                <constraint firstItem="ZL8-bC-1SX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="t6o-Gy-Caf"/>
+                <constraint firstItem="ZL8-bC-1SX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uDS-Qp-ugC"/>
+                <constraint firstItem="8Bt-09-SZy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="0.3" id="uT5-8z-kcH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="125.4872563718141"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg2" width="400" height="400"/>
+        <image name="calendar" width="61" height="61"/>
+    </resources>
+</document>

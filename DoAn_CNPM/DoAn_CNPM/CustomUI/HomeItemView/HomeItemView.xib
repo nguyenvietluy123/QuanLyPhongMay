@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Medium.otf">
+            <string>DINPro-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeItemView" customModule="HMKFieldCollector" customModuleProvider="target">
+            <connections>
+                <outlet property="lbTitle" destination="UUa-gp-gbO" id="MaY-ck-dad"/>
+                <outlet property="lbValue" destination="gGJ-i7-ruj" id="Tx5-eA-hFO"/>
+                <outlet property="magicView" destination="Jeh-Dd-76z" id="JLH-By-iBW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0B-Zq-KQW" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                    <rect key="frame" x="5" y="5" width="173" height="56"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-vP-Buq" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="173" height="56"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-Dd-76z" customClass="MagicView" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="5" height="56"/>
+                                    <color key="backgroundColor" red="0.32941176470588235" green="0.81960784313725488" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="5" id="oLu-RI-S9j"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số món" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUa-gp-gbO" customClass="KHLabel" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="13" y="3" width="155" height="22.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGJ-i7-ruj" customClass="KHLabel" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="13" y="25.333333333333329" width="155" height="30.666666666666671"/>
+                                    <fontDescription key="fontDescription" name="DINPro-Medium" family="DIN Pro" pointSize="18"/>
+                                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-sp-XSf" customClass="MVMaterialButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="173" height="56"/>
+                                    <connections>
+                                        <action selector="action:" destination="-1" eventType="touchUpInside" id="EwS-Vr-DNc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="gGJ-i7-ruj" secondAttribute="bottom" id="76x-cL-AoR"/>
+                                <constraint firstItem="Jeh-Dd-76z" firstAttribute="leading" secondItem="SXS-vP-Buq" secondAttribute="leading" id="Cnv-eM-VAi"/>
+                                <constraint firstAttribute="bottom" secondItem="Jeh-Dd-76z" secondAttribute="bottom" id="Eh3-KL-jh5"/>
+                                <constraint firstItem="UUa-gp-gbO" firstAttribute="height" secondItem="SXS-vP-Buq" secondAttribute="height" multiplier="2:5" id="F9s-U7-CYK"/>
+                                <constraint firstAttribute="trailing" secondItem="UUa-gp-gbO" secondAttribute="trailing" constant="5" id="HYg-CD-Grd"/>
+                                <constraint firstAttribute="bottom" secondItem="bWB-sp-XSf" secondAttribute="bottom" id="Kgn-FA-5WC"/>
+                                <constraint firstAttribute="trailing" secondItem="bWB-sp-XSf" secondAttribute="trailing" id="KvP-8M-5fj"/>
+                                <constraint firstItem="gGJ-i7-ruj" firstAttribute="top" secondItem="UUa-gp-gbO" secondAttribute="bottom" id="MJn-CQ-pB6"/>
+                                <constraint firstItem="bWB-sp-XSf" firstAttribute="leading" secondItem="SXS-vP-Buq" secondAttribute="leading" id="Q1Q-Lr-hym"/>
+                                <constraint firstItem="Jeh-Dd-76z" firstAttribute="top" secondItem="SXS-vP-Buq" secondAttribute="top" id="TGN-VE-BWB"/>
+                                <constraint firstItem="UUa-gp-gbO" firstAttribute="top" secondItem="SXS-vP-Buq" secondAttribute="top" constant="3" id="VYH-oK-CR6"/>
+                                <constraint firstItem="UUa-gp-gbO" firstAttribute="leading" secondItem="Jeh-Dd-76z" secondAttribute="trailing" constant="8" id="bOi-BC-xRk"/>
+                                <constraint firstItem="bWB-sp-XSf" firstAttribute="top" secondItem="SXS-vP-Buq" secondAttribute="top" id="kC1-BN-J7j"/>
+                                <constraint firstItem="gGJ-i7-ruj" firstAttribute="trailing" secondItem="UUa-gp-gbO" secondAttribute="trailing" id="kpa-Cj-a4o"/>
+                                <constraint firstItem="gGJ-i7-ruj" firstAttribute="leading" secondItem="UUa-gp-gbO" secondAttribute="leading" id="xpN-RL-Zvf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SXS-vP-Buq" secondAttribute="trailing" id="Fnn-1R-qRP"/>
+                        <constraint firstItem="SXS-vP-Buq" firstAttribute="top" secondItem="H0B-Zq-KQW" secondAttribute="top" id="T8K-zs-KCL"/>
+                        <constraint firstItem="SXS-vP-Buq" firstAttribute="leading" secondItem="H0B-Zq-KQW" secondAttribute="leading" id="YlT-In-JHa"/>
+                        <constraint firstAttribute="bottom" secondItem="SXS-vP-Buq" secondAttribute="bottom" id="sFE-k5-IHD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="H0B-Zq-KQW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6ca-we-bVW"/>
+                <constraint firstItem="H0B-Zq-KQW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="56:66" id="EpC-jS-RXV"/>
+                <constraint firstItem="H0B-Zq-KQW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="WzW-Yr-HiQ"/>
+                <constraint firstItem="H0B-Zq-KQW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sv3-h3-2Wq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.971014492753625" y="98.233695652173921"/>
+        </view>
+    </objects>
+</document>

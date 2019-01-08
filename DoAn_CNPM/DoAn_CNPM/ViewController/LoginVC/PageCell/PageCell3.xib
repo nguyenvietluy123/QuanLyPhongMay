@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sxo-v3-Soy" customClass="PageCell3" customModule="DoAn_CNPM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="736"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="736"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="Osr-dd-3AR">
+                        <rect key="frame" x="2" y="399" width="260.5" height="260.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Osr-dd-3AR" secondAttribute="height" multiplier="1:1" id="180-6O-jcg"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hinh2" translatesAutoresizingMaskIntoConstraints="NO" id="Cnj-6H-1Cq">
+                        <rect key="frame" x="39.5" y="70" width="450" height="368"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Dễ dàng sử dụng cho nhiều đối tượng" translatesAutoresizingMaskIntoConstraints="NO" id="abh-co-8Oh">
+                        <rect key="frame" x="262.5" y="418" width="178.5" height="298"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Cnj-6H-1Cq" firstAttribute="height" secondItem="sxo-v3-Soy" secondAttribute="height" multiplier="1:2" id="1xr-K3-PmZ"/>
+                <constraint firstItem="abh-co-8Oh" firstAttribute="top" secondItem="Cnj-6H-1Cq" secondAttribute="bottom" constant="-20" id="F5c-H3-VTV"/>
+                <constraint firstAttribute="bottom" secondItem="abh-co-8Oh" secondAttribute="bottom" constant="20" id="NWg-8J-ruW"/>
+                <constraint firstItem="Cnj-6H-1Cq" firstAttribute="top" secondItem="sxo-v3-Soy" secondAttribute="top" constant="70" id="Ttk-9k-vZM"/>
+                <constraint firstItem="Osr-dd-3AR" firstAttribute="centerX" secondItem="gcM-WZ-O8Z" secondAttribute="centerX" multiplier="0.6" id="UYe-ks-eCh"/>
+                <constraint firstItem="Osr-dd-3AR" firstAttribute="centerY" secondItem="gcM-WZ-O8Z" secondAttribute="centerY" multiplier="1.4" id="VPH-js-sNw"/>
+                <constraint firstAttribute="trailing" secondItem="abh-co-8Oh" secondAttribute="trailing" id="e7x-tB-HnP"/>
+                <constraint firstItem="abh-co-8Oh" firstAttribute="leading" secondItem="Osr-dd-3AR" secondAttribute="trailing" id="jqL-9S-MrI"/>
+                <constraint firstItem="Osr-dd-3AR" firstAttribute="width" secondItem="sxo-v3-Soy" secondAttribute="width" multiplier="0.59" id="wDc-9j-s02"/>
+                <constraint firstItem="Cnj-6H-1Cq" firstAttribute="centerX" secondItem="gcM-WZ-O8Z" secondAttribute="centerX" multiplier="1.2" id="yXH-el-PjB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gcM-WZ-O8Z"/>
+            <size key="customSize" width="338" height="509"/>
+            <point key="canvasLocation" x="87.200000000000003" y="26.986506746626688"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg3" width="350" height="350"/>
+        <image name="hinh2" width="450" height="450"/>
+    </resources>
+</document>

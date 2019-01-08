@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Regular.ttf">
+            <string>Gibson-Regular</string>
+        </array>
+        <array key="gibson-bold.ttf">
+            <string>Gibson-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoginCell" customModule="DoAn_CNPM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg6" translatesAutoresizingMaskIntoConstraints="NO" id="Dby-2r-9k7">
+                        <rect key="frame" x="0.0" y="70" width="414" height="414"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Dby-2r-9k7" secondAttribute="height" multiplier="1:1" id="t6c-aU-rrp"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wZ-U7-IAc" customClass="KHTextField" customModule="DoAn_CNPM" customModuleProvider="target">
+                        <rect key="frame" x="20.5" y="391" width="373" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9wZ-U7-IAc" secondAttribute="height" multiplier="53:8" id="r1R-NI-cuT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow9-k0-6Gu">
+                        <rect key="frame" x="20.5" y="577" width="373" height="56.5"/>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.23529411764705882" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="17"/>
+                        <state key="normal" title="Login">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="handleLogin:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ztn-4I-seN"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XO-Lf-i3H">
+                        <rect key="frame" x="0.0" y="226" width="414" height="42"/>
+                        <fontDescription key="fontDescription" name="Gibson-Bold" family="Gibson" pointSize="34"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2OX-4a-NTd" customClass="KHTextField" customModule="DoAn_CNPM" customModuleProvider="target">
+                        <rect key="frame" x="20.5" y="484" width="373" height="56"/>
+                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    </textField>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9wZ-U7-IAc" firstAttribute="centerX" secondItem="Dby-2r-9k7" secondAttribute="centerX" id="0hE-na-4fx"/>
+                <constraint firstItem="2OX-4a-NTd" firstAttribute="width" secondItem="9wZ-U7-IAc" secondAttribute="width" id="4Uk-Tp-Ffk"/>
+                <constraint firstItem="2OX-4a-NTd" firstAttribute="top" secondItem="9wZ-U7-IAc" secondAttribute="bottom" constant="37" id="870-jB-PfZ"/>
+                <constraint firstItem="Dby-2r-9k7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="70" id="ALg-Ku-YeV"/>
+                <constraint firstItem="4XO-Lf-i3H" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="EDK-jz-fsR"/>
+                <constraint firstItem="Ow9-k0-6Gu" firstAttribute="width" secondItem="2OX-4a-NTd" secondAttribute="width" id="KD9-EU-V1j"/>
+                <constraint firstItem="2OX-4a-NTd" firstAttribute="height" secondItem="9wZ-U7-IAc" secondAttribute="height" id="MxJ-7f-KqS"/>
+                <constraint firstItem="2OX-4a-NTd" firstAttribute="top" secondItem="Dby-2r-9k7" secondAttribute="bottom" id="Oqj-vd-5Rn"/>
+                <constraint firstItem="4XO-Lf-i3H" firstAttribute="centerX" secondItem="Dby-2r-9k7" secondAttribute="centerX" id="PJO-dh-MCJ"/>
+                <constraint firstItem="Dby-2r-9k7" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="R1y-Go-l2b"/>
+                <constraint firstItem="9wZ-U7-IAc" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="1.8:2" id="WYu-sZ-FQU"/>
+                <constraint firstItem="Ow9-k0-6Gu" firstAttribute="top" secondItem="2OX-4a-NTd" secondAttribute="bottom" constant="37" id="aZL-tm-2Gb"/>
+                <constraint firstItem="4XO-Lf-i3H" firstAttribute="centerY" secondItem="Dby-2r-9k7" secondAttribute="centerY" constant="-30" id="cU6-XU-8QB"/>
+                <constraint firstItem="Ow9-k0-6Gu" firstAttribute="centerX" secondItem="2OX-4a-NTd" secondAttribute="centerX" id="faU-ca-hAO"/>
+                <constraint firstItem="2OX-4a-NTd" firstAttribute="centerX" secondItem="9wZ-U7-IAc" secondAttribute="centerX" id="iYm-s9-wwU"/>
+                <constraint firstItem="Dby-2r-9k7" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="rnb-Yo-51G"/>
+                <constraint firstItem="Ow9-k0-6Gu" firstAttribute="height" secondItem="2OX-4a-NTd" secondAttribute="height" id="ztm-SP-Obg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="295" height="417"/>
+            <connections>
+                <outlet property="tfEmail" destination="9wZ-U7-IAc" id="DHy-Wd-c3a"/>
+                <outlet property="tfPassword" destination="2OX-4a-NTd" id="cRo-Da-eBd"/>
+            </connections>
+            <point key="canvasLocation" x="77.599999999999994" y="18.440779610194905"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg6" width="350" height="350"/>
+    </resources>
+</document>

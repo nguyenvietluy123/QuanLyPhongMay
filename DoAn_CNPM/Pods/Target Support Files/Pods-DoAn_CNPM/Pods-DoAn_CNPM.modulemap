@@ -1,0 +1,6 @@
+framework module Pods_DoAn_CNPM {
+  umbrella header "Pods-DoAn_CNPM-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListView" customModule="Task" customModuleProvider="target">
+            <connections>
+                <outlet property="ctrHeightButton" destination="5cK-4x-80M" id="Qj9-79-uy5"/>
+                <outlet property="ctrHeightTbList" destination="NPD-1Z-ynB" id="VMr-qE-usq"/>
+                <outlet property="ctrHeightTitle" destination="FOx-CE-Rtn" id="PiW-8L-TfW"/>
+                <outlet property="lbNoData" destination="VOU-eF-ARY" id="ESV-uR-0n8"/>
+                <outlet property="lbTitle" destination="PtH-Qf-IUG" id="eOC-XE-opn"/>
+                <outlet property="tbList" destination="9xm-Wa-Ir4" id="vkW-Rw-6JC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Mt-pY-SiJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-qu-1Ld" customClass="KHView" customModule="Task" customModuleProvider="target">
+                            <rect key="frame" x="52" y="218.66666666666663" width="310" height="300"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh sách thành viên" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtH-Qf-IUG" customClass="KHLabel" customModule="Task" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="FOx-CE-Rtn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.32549019610000002" green="0.35294117650000001" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9xm-Wa-Ir4">
+                                    <rect key="frame" x="0.0" y="50.000000000000028" width="310" height="200"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="NPD-1Z-ynB"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="EJy-RH-TBC"/>
+                                        <outlet property="delegate" destination="-1" id="4gC-QU-ecq"/>
+                                    </connections>
+                                </tableView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="txt_no_employee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-eF-ARY" customClass="KHLabel" customModule="Task" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="50.000000000000028" width="310" height="200"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.25490196079999999" green="0.25490196079999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-ap-VvD" customClass="KHButton" customModule="Task" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="250" width="310" height="50"/>
+                                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="5cK-4x-80M"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="Huỷ"/>
+                                    <connections>
+                                        <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="rPk-Xt-L0f"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ZMe-ap-VvD" secondAttribute="trailing" id="BWe-No-Dhe"/>
+                                <constraint firstItem="VOU-eF-ARY" firstAttribute="bottom" secondItem="9xm-Wa-Ir4" secondAttribute="bottom" id="D7m-oK-qc3"/>
+                                <constraint firstAttribute="trailing" secondItem="PtH-Qf-IUG" secondAttribute="trailing" id="Fto-eu-3Lf"/>
+                                <constraint firstItem="PtH-Qf-IUG" firstAttribute="top" secondItem="Cc4-qu-1Ld" secondAttribute="top" id="HzU-L2-V2K"/>
+                                <constraint firstItem="VOU-eF-ARY" firstAttribute="leading" secondItem="9xm-Wa-Ir4" secondAttribute="leading" id="OVr-VV-zY3"/>
+                                <constraint firstItem="VOU-eF-ARY" firstAttribute="top" secondItem="9xm-Wa-Ir4" secondAttribute="top" id="RcM-yg-RCq"/>
+                                <constraint firstItem="9xm-Wa-Ir4" firstAttribute="leading" secondItem="Cc4-qu-1Ld" secondAttribute="leading" id="WXt-bb-o2f"/>
+                                <constraint firstItem="ZMe-ap-VvD" firstAttribute="top" secondItem="9xm-Wa-Ir4" secondAttribute="bottom" id="XMW-oG-Kjp"/>
+                                <constraint firstItem="VOU-eF-ARY" firstAttribute="trailing" secondItem="9xm-Wa-Ir4" secondAttribute="trailing" id="YfF-jo-3NK"/>
+                                <constraint firstAttribute="bottom" secondItem="ZMe-ap-VvD" secondAttribute="bottom" id="b7t-Rv-0CF"/>
+                                <constraint firstAttribute="trailing" secondItem="9xm-Wa-Ir4" secondAttribute="trailing" id="lKo-oE-iGu"/>
+                                <constraint firstItem="9xm-Wa-Ir4" firstAttribute="top" secondItem="PtH-Qf-IUG" secondAttribute="bottom" id="oeS-49-paA"/>
+                                <constraint firstItem="ZMe-ap-VvD" firstAttribute="leading" secondItem="Cc4-qu-1Ld" secondAttribute="leading" id="uje-6q-OMA"/>
+                                <constraint firstItem="PtH-Qf-IUG" firstAttribute="leading" secondItem="Cc4-qu-1Ld" secondAttribute="leading" id="zCN-GN-bI1"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.57579730309999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Cc4-qu-1Ld" firstAttribute="centerX" secondItem="0Mt-pY-SiJ" secondAttribute="centerX" id="4VS-CA-nwC"/>
+                        <constraint firstItem="Cc4-qu-1Ld" firstAttribute="width" secondItem="0Mt-pY-SiJ" secondAttribute="width" multiplier="3:4" id="ADm-2J-U6f"/>
+                        <constraint firstItem="Cc4-qu-1Ld" firstAttribute="centerY" secondItem="0Mt-pY-SiJ" secondAttribute="centerY" id="YOy-Vu-wUO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Mt-pY-SiJ" secondAttribute="bottom" id="9Wm-cl-hLT"/>
+                <constraint firstAttribute="trailing" secondItem="0Mt-pY-SiJ" secondAttribute="trailing" id="bIJ-BJ-gmp"/>
+                <constraint firstItem="0Mt-pY-SiJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ebz-lZ-AKv"/>
+                <constraint firstItem="0Mt-pY-SiJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qSu-eW-TEs"/>
+            </constraints>
+            <point key="canvasLocation" x="-112.5" y="39.5"/>
+        </view>
+    </objects>
+</document>

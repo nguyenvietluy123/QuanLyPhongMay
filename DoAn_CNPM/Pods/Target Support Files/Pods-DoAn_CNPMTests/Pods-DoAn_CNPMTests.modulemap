@@ -1,0 +1,6 @@
+framework module Pods_DoAn_CNPMTests {
+  umbrella header "Pods-DoAn_CNPMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

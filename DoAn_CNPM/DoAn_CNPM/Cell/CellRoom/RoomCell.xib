@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gibson-Regular.ttf">
+            <string>Gibson-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="83" id="KGk-i7-Jjw" customClass="RoomCell" customModule="DoAn_CNPM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phòng C101" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpu-ES-EoW" customClass="KHLabel">
+                        <rect key="frame" x="28" y="23" width="88.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6bt-Sc-HFm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10/20 máy)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZe-4U-FWW" customClass="KHLabel">
+                        <rect key="frame" x="28" y="49" width="68" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="IUm-PP-5GC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s89-4a-62D" customClass="KHView" customModule="DoAn_CNPM" customModuleProvider="target">
+                        <rect key="frame" x="215.5" y="31" width="92.5" height="20.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking &gt;&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7s-MC-iOm" customClass="KHLabel">
+                                <rect key="frame" x="14" y="0.0" width="65" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mAJ-3G-9Nr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gibson-Regular" family="Gibson" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.66666666669999997" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="F7s-MC-iOm" firstAttribute="centerX" secondItem="s89-4a-62D" secondAttribute="centerX" id="4TG-3D-DaA"/>
+                            <constraint firstItem="F7s-MC-iOm" firstAttribute="centerY" secondItem="s89-4a-62D" secondAttribute="centerY" id="lo0-ET-cEe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="s89-4a-62D" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:4" id="1qU-5h-Z0D"/>
+                    <constraint firstItem="s89-4a-62D" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1.3:4.5" id="51B-MK-Uja"/>
+                    <constraint firstItem="Xpu-ES-EoW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="Ny2-Gi-wKa"/>
+                    <constraint firstAttribute="trailing" secondItem="s89-4a-62D" secondAttribute="trailing" constant="12" id="Zvz-Am-CME"/>
+                    <constraint firstItem="RZe-4U-FWW" firstAttribute="leading" secondItem="Xpu-ES-EoW" secondAttribute="leading" id="avK-zW-ffs"/>
+                    <constraint firstItem="RZe-4U-FWW" firstAttribute="top" secondItem="Xpu-ES-EoW" secondAttribute="bottom" constant="5" id="hN2-LR-hUk"/>
+                    <constraint firstItem="s89-4a-62D" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sXY-QY-SvE"/>
+                    <constraint firstItem="Xpu-ES-EoW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="zqW-lA-uFA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbNumPC" destination="RZe-4U-FWW" id="ThS-MK-7uy"/>
+                <outlet property="lbRoomName" destination="Xpu-ES-EoW" id="Rlx-Bj-qln"/>
+                <outlet property="viewStatusBook" destination="s89-4a-62D" id="tqZ-fZ-Ky4"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="131.78410794602701"/>
+        </tableViewCell>
+    </objects>
+</document>

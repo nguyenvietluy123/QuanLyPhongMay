@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="CellPC" customModule="DoAn_CNPM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="134"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfE-wf-0ra">
+                        <rect key="frame" x="0.0" y="0.0" width="136" height="134"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wp-Po-vRz" customClass="KHView" customModule="DoAn_CNPM" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="116" height="114"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8r9-DE-Al2" customClass="KHView" customModule="DoAn_CNPM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="114"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M1_C101" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="861-9X-Uvl" customClass="KHLabel" customModule="DoAn_CNPM" customModuleProvider="target">
+                                                <rect key="frame" x="28.5" y="48" width="59" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.65098039220000004" green="0.67843137249999996" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="861-9X-Uvl" firstAttribute="centerY" secondItem="8r9-DE-Al2" secondAttribute="centerY" id="RMc-HP-9aP"/>
+                                            <constraint firstItem="861-9X-Uvl" firstAttribute="centerX" secondItem="8r9-DE-Al2" secondAttribute="centerX" id="T9R-NE-lXw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8r9-DE-Al2" firstAttribute="leading" secondItem="9Wp-Po-vRz" secondAttribute="leading" id="Bc8-eS-3uc"/>
+                                    <constraint firstItem="8r9-DE-Al2" firstAttribute="top" secondItem="9Wp-Po-vRz" secondAttribute="top" id="LRu-Uk-Vzb"/>
+                                    <constraint firstAttribute="trailing" secondItem="8r9-DE-Al2" secondAttribute="trailing" id="V8u-w0-7YP"/>
+                                    <constraint firstAttribute="bottom" secondItem="8r9-DE-Al2" secondAttribute="bottom" id="cZn-uz-mtp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Wp-Po-vRz" firstAttribute="leading" secondItem="QfE-wf-0ra" secondAttribute="leading" constant="10" id="IPN-eS-pL0"/>
+                            <constraint firstAttribute="bottom" secondItem="9Wp-Po-vRz" secondAttribute="bottom" constant="10" id="Xsl-Rs-TEl"/>
+                            <constraint firstAttribute="trailing" secondItem="9Wp-Po-vRz" secondAttribute="trailing" constant="10" id="d5P-eF-tJe"/>
+                            <constraint firstItem="9Wp-Po-vRz" firstAttribute="top" secondItem="QfE-wf-0ra" secondAttribute="top" constant="10" id="e43-qI-R8L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QfE-wf-0ra" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NhA-sv-zO6"/>
+                <constraint firstItem="QfE-wf-0ra" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fQl-pk-ywI"/>
+                <constraint firstAttribute="bottom" secondItem="QfE-wf-0ra" secondAttribute="bottom" id="kKx-2X-OKG"/>
+                <constraint firstAttribute="trailing" secondItem="QfE-wf-0ra" secondAttribute="trailing" id="t9K-7k-Do4"/>
+            </constraints>
+            <size key="customSize" width="38" height="37"/>
+            <connections>
+                <outlet property="lbNum" destination="861-9X-Uvl" id="lch-Ph-P1g"/>
+                <outlet property="viewStatusCell" destination="8r9-DE-Al2" id="Wil-k8-G2Y"/>
+            </connections>
+            <point key="canvasLocation" x="-150.40000000000001" y="-94.452773613193415"/>
+        </collectionViewCell>
+    </objects>
+</document>
